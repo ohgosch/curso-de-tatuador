@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import background from '../../images/Main background.png';
 import { COLORS } from '../../utils/constants';
+import { Wrapper } from '../../styles/wrapper';
 
 export const Container = styled.section`
   background-image: url('${background}');
@@ -11,7 +12,7 @@ export const Container = styled.section`
   justify-content: center;
 `;
 
-export const Content = styled.div`
+export const Content = styled(Wrapper)`
   max-width: 621px;
   text-align: center;
 `;

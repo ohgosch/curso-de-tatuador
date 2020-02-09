@@ -35,6 +35,10 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  img {
+    max-width: 100%;
+  }
 `;
 
 const Layout = ({ children }) => {
