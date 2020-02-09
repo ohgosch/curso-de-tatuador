@@ -6,6 +6,7 @@ import { Main } from "../components/Main";
 import { Newsletter } from "../components/Newsletter";
 import { Teacher } from "../components/Teacher";
 import { About } from "../components/About";
+import { Lesson } from "../components/Lesson";
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,8 @@ const IndexPage = () => (
     <Newsletter />
     <Teacher />
     <About />
+    <Lesson />
+    <Newsletter />
   </Layout>
 )
 

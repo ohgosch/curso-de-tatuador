@@ -27,3 +27,27 @@ export const about = {
   description: 'Trata-se de um curso de tatuagem dividido em módulos voltado para iniciantes. Nele serão ensinados questões técnicas e práticas relacionadas aos equipamentos envolvidos e necessários, higiene, biossegurança, anatomia do corpo para melhor encaixe de desenhos, montagem de desenho para aplicação de stencil e dicas sobre o início da carreira de tatuador.',
   descriptionLine: 'O curso é voltado tanto para quem nunca tatuou, quanto para quem já tem alguma prática e pretende solidificar seus conhecimentos básicos.'
 }
+
+export const lesson = {
+  title: 'Aulas',
+  individual: {
+    title: 'Modalidade Individual',
+    included: [
+      '3x por semana por 4 semanas',
+      '36 horas de curso',
+      'Apostila + Equipamento com valor reduzido',
+      'Certificação',
+      'Teoria + Prática para tatuadores iniciantes',
+    ],
+  },
+  intensive: {
+    title: 'Modalidade Intensiva',
+    included: [
+      '1x por semana por 6 semanas',
+      '36 horas de curso',
+      'Apostila + Equipamento com valor reduzido',
+      'Certificação',
+      'Teoria + Prática para tatuadores iniciantes',
+    ],
+  },
+}
