@@ -7,45 +7,44 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
 
 import { COLORS } from "../utils/constants";
+import { RobotoSlab } from "../utils/font";
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-  
+const GlobalStyle = createGlobalStyle` 
+  ${RobotoSlab}
+
   body, html {
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
     background-color: ${COLORS.background};
   }
 
   * {
-    font-family: 'Roboto Slab', serif;
     color: ${COLORS.texts};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
   return (
-    <main>
+    <>
       <GlobalStyle />
-      {children}
-    </main>
+      <main>
+        {children}
+      </main>
+    </>
   )
 }
 
