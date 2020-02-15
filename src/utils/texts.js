@@ -51,3 +51,11 @@ export const lesson = {
     ],
   },
 }
+
+export const location = {
+  title: 'Local',
+  name: 'Santa Madre Tattoo',
+  description1: 'Rua José do Patrocínio, 472',
+  description2: 'Cidade Baixa',
+  description3: 'Porto Alegre/RS',
+}

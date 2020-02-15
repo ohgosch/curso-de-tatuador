@@ -7,6 +7,7 @@ import { Newsletter } from "../components/Newsletter";
 import { Teacher } from "../components/Teacher";
 import { About } from "../components/About";
 import { Lesson } from "../components/Lesson";
+import { Location } from "../components/Location";
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <About />
     <Lesson />
     <Newsletter />
+    <Location />
   </Layout>
 )
 
