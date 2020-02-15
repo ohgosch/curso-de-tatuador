@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { COLORS } from '../../utils/constants';
 import { Wrapper as WrapperBase } from '../../styles/wrapper';
 import facebook from '../../images/facebook.png';
-import twitter from '../../images/twitter.png';
+import instagram from '../../images/instagram.png';
 
 export const Container = styled.footer`
   background-color: ${COLORS.brand};
@@ -42,7 +42,7 @@ export const SocialMedia = styled.a`
     background-image: url('${facebook}')
   `}
 
-  ${props => props.media === 'twitter' && css`
-    background-image: url('${twitter}')
+  ${props => props.media === 'instagram' && css`
+    background-image: url('${instagram}')
   `}
 `;

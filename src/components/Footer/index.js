@@ -8,8 +8,8 @@ export const Footer = () => (
     <Wrapper>
       <Side>{footer.copyright}</Side>
       <Side>
-        <SocialMedia media="facebook" href="#" title="Facebook">Facebook</SocialMedia>
-        <SocialMedia media="twitter" href="#" title="Twitter">Twitter</SocialMedia>
+        <SocialMedia target="_BLANK" media="facebook" href="https://www.facebook.com/SantaMadreTattooShop/" title="Facebook">Facebook</SocialMedia>
+        <SocialMedia target="_BLANK" media="instagram" href="https://www.instagram.com/SantaMadreInk/" title="Instagram">Instagram</SocialMedia>
       </Side>
     </Wrapper>
   </Container>
