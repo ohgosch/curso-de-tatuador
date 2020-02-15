@@ -59,3 +59,7 @@ export const location = {
   description2: 'Cidade Baixa',
   description3: 'Porto Alegre/RS',
 }
+
+export const footer = {
+  copyright: 'Santa Madre Tattoo® - Todos os direitos reservados.',
+}
