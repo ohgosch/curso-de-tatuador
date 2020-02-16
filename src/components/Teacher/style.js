@@ -1,11 +1,21 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { mobile } from "../../styles/medias"
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
+
+  ${mobile(css`
+    flex-wrap: wrap;
+    justify-content: center;
+  `)}
 `
 
-export const ProfilePhoto = styled.img``
+export const ProfilePhoto = styled.img`
+  ${mobile(css`
+    margin-bottom: 30px;
+  `)}
+`
 
 export const ContentSide = styled.div`
   margin-left: 40px;

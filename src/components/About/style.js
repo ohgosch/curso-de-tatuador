@@ -1,8 +1,14 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+
+import { desktop } from "../../styles/medias"
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+
+  ${desktop(css`
+    grid-template-columns: 1fr 1fr;
+  `)}
 `
 
 export const Side = styled.div`

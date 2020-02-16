@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { desktop } from "../../../styles/medias"
 
 export const Container = styled.section``
 
@@ -8,7 +9,10 @@ export const Title = styled.h3`
   font-size: 36px;
   line-height: 47px;
   text-align: center;
-  padding: 0 100px;
+
+  ${desktop(css`
+    padding: 0 100px;
+  `)}
 `
 
 export const Items = styled.ul`
@@ -18,11 +22,16 @@ export const Items = styled.ul`
 `
 
 export const Item = styled.li`
-  line-height: 50px;
   width: 100%;
+  min-height: 50px;
+  text-align: center;
+  justify-content: center;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 
   &:nth-child(odd) {
     background-color: rgba(159, 86, 19, 0.5);

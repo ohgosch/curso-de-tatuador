@@ -1,15 +1,20 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import background from "../../images/Main background.png"
 import { COLORS } from "../../utils/constants"
 import { Wrapper } from "../../styles/wrapper"
+import { desktop } from "../../styles/medias"
 
 export const Container = styled.section`
   background-image: url('${background}');
   width: 100%;
-  height: calc(100vh - 209px);
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+
+  ${desktop(css`
+    min-height: calc(100vh - 209px);
+  `)}
 `
 
 export const Content = styled(Wrapper)`

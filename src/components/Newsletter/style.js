@@ -1,7 +1,8 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { COLORS } from "../../utils/constants"
 import { Input } from "../../styles/input"
+import { desktop, tablet } from "../../styles/medias"
 
 export const Container = styled.div`
   display: grid;
@@ -10,8 +11,15 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 130px;
   grid-gap: 25px;
+
+  ${desktop(css`
+    grid-template-columns: 1fr 1fr 1fr 130px;
+  `)}
+
+  ${tablet(css`
+    grid-template-columns: 1fr 1fr;
+  `)}
 `
 
 export const Send = styled(Input)`
