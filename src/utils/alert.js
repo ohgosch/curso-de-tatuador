@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import { COLORS } from "./constants";
+import { COLORS } from "./constants"
 
 export const Alert = styled.span`
   font-style: normal;
@@ -8,4 +8,4 @@ export const Alert = styled.span`
   font-size: 18px;
   line-height: 24px;
   color: ${COLORS.brand};
-`;
+`

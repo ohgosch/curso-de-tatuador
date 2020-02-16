@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const Container = styled.section``;
+export const Container = styled.section``
 
 export const Title = styled.h3`
   font-style: normal;
@@ -9,13 +9,13 @@ export const Title = styled.h3`
   line-height: 47px;
   text-align: center;
   padding: 0 100px;
-`;
+`
 
 export const Items = styled.ul`
   list-style-type: none;
   text-align: center;
   margin-top: 35px;
-`;
+`
 
 export const Item = styled.li`
   line-height: 50px;
@@ -27,4 +27,4 @@ export const Item = styled.li`
   &:nth-child(odd) {
     background-color: rgba(159, 86, 19, 0.5);
   }
-`;
+`

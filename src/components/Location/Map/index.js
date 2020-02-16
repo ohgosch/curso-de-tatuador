@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react"
 
-import { Iframe } from "./style";
+import { Iframe } from "./style"
 
 export const Map = () => (
   <Iframe
@@ -8,6 +8,6 @@ export const Map = () => (
     width="600"
     height="450"
     frameborder="0"
-    allowfullscreen="">
-  </Iframe>
-);
+    allowfullscreen=""
+  ></Iframe>
+)

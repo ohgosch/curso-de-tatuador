@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 
-import { COLORS } from "../utils/constants";
-import { RobotoSlab } from "../utils/font";
+import { COLORS } from "../utils/constants"
+import { RobotoSlab } from "../utils/font"
 
 const GlobalStyle = createGlobalStyle` 
   ${RobotoSlab}
@@ -39,15 +39,13 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
-`;
+`
 
 const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </>
   )
 }

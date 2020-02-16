@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react"
 
-import { Container, Content, Description, Button, Title } from './style';
-import Logo from '../../images/Logo.png';
-import { main } from '../../utils/texts';
+import { Container, Content, Description, Button, Title } from "./style"
+import Logo from "../../images/Logo.png"
+import { main } from "../../utils/texts"
 
 export const Main = () => (
   <Container>
@@ -15,4 +15,4 @@ export const Main = () => (
   </Container>
 )
 
-export default Main;
+export default Main

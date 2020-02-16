@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import background from '../../images/Main background.png';
-import { COLORS } from '../../utils/constants';
-import { Wrapper } from '../../styles/wrapper';
+import styled from "styled-components"
+import background from "../../images/Main background.png"
+import { COLORS } from "../../utils/constants"
+import { Wrapper } from "../../styles/wrapper"
 
 export const Container = styled.section`
   background-image: url('${background}');
@@ -10,24 +10,24 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const Content = styled(Wrapper)`
   max-width: 621px;
   text-align: center;
-`;
+`
 
 export const Title = styled.h1`
   position: absolute;
   left: -9999pc;
-`;
+`
 
 export const Description = styled.p`
   font-style: normal;
   font-size: 24px;
   line-height: 32px;
   margin-top: 30px;
-`;
+`
 
 export const Button = styled.button`
   height: 65px;
@@ -40,4 +40,4 @@ export const Button = styled.button`
   font-size: 24px;
   line-height: 32px;
   margin-top: 30px;
-`;
+`

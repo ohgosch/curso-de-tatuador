@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react"
+import PropTypes from "prop-types"
 
-import { Container, Children } from './style';
-import { Wrapper } from '../../styles/wrapper';
-import { Title } from '../../styles/title';
+import { Container, Children } from "./style"
+import { Wrapper } from "../../styles/wrapper"
+import { Title } from "../../styles/title"
 
 export const Section = ({ children, title, small, backgroundImage }) => (
   <Container backgroundImage={backgroundImage}>
@@ -12,7 +12,7 @@ export const Section = ({ children, title, small, backgroundImage }) => (
       <Children>{children}</Children>
     </Wrapper>
   </Container>
-);
+)
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
@@ -23,6 +23,6 @@ Section.propTypes = {
 
 Section.defaultProps = {
   small: false,
-  title: '',
-  backgroundImage: '',
+  title: "",
+  backgroundImage: "",
 }

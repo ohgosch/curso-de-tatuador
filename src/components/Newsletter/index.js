@@ -1,9 +1,9 @@
-import React from 'react';
-import { Container, Send, Form } from './style';
-import { Section } from '../Section';
-import { Input } from '../../styles/input';
-import { newsletter } from '../../utils/texts';
-import { Alert } from '../../utils/alert';
+import React from "react"
+import { Container, Send, Form } from "./style"
+import { Section } from "../Section"
+import { Input } from "../../styles/input"
+import { newsletter } from "../../utils/texts"
+import { Alert } from "../../utils/alert"
 
 export const Newsletter = () => (
   <Section title={newsletter.title} small={true}>
@@ -17,4 +17,4 @@ export const Newsletter = () => (
       <Alert>{newsletter.error.values}</Alert>
     </Container>
   </Section>
-);
+)

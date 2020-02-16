@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import { COLORS } from '../utils/constants';
+import { COLORS } from "../utils/constants"
 
 export const Input = styled.input`
   font-style: normal;
@@ -13,4 +13,4 @@ export const Input = styled.input`
   background-color: transparent;
   padding: 0 20px;
   height: 60px;
-`;
+`
