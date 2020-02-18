@@ -16,7 +16,7 @@ import profile from "../../images/Professor perfil.png"
 export const Teacher = () => (
   <Section title={teacher.title} backgroundImage={background}>
     <Container>
-      <ProfilePhoto src={profile} />
+      <ProfilePhoto src={profile} alt={teacher.imageAlt} />
       <ContentSide>
         <Name>{teacher.name}</Name>
         <Description>{teacher.description}</Description>

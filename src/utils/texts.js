@@ -20,6 +20,8 @@ export const newsletter = {
 export const teacher = {
   title: "Professor",
   name: "Felipe Madruga",
+  imageAlt:
+    "Foto do tatuador Felipe Madruga ajustando o equipamento de tatuagem.",
   description:
     "Com passagem por alguns dos principais estúdios da cidade, tem mais de 10 anos de experiência como tatuador e ministra cursos de tatuagem desde 2015.",
 }
@@ -30,6 +32,7 @@ export const about = {
     "Trata-se de um curso de tatuagem dividido em módulos voltado para iniciantes. Nele serão ensinados questões técnicas e práticas relacionadas aos equipamentos envolvidos e necessários, higiene, biossegurança, anatomia do corpo para melhor encaixe de desenhos, montagem de desenho para aplicação de stencil e dicas sobre o início da carreira de tatuador.",
   descriptionLine:
     "O curso é voltado tanto para quem nunca tatuou, quanto para quem já tem alguma prática e pretende solidificar seus conhecimentos básicos.",
+  imageAlt: "Foto do tatuador Felipe Madruga tatuando um dos seus clientes.",
 }
 
 export const lesson = {
