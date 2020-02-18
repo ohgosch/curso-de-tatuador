@@ -13,7 +13,7 @@ export const Container = styled.section`
   min-height: 100vh;
 
   ${desktop(css`
-    min-height: calc(100vh - 209px);
+    min-height: calc(100vh - 180px);
   `)}
 `
 
