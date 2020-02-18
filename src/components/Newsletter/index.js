@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import PropTypes from "prop-types"
 
 import { Container, Send, Form } from "./style"
 import { Section } from "../Section"
@@ -7,7 +8,7 @@ import { newsletter } from "../../utils/texts"
 import { Alert } from "../../utils/alert"
 import { ERROR_TYPE } from "../../utils/constants"
 
-export const Newsletter = () => {
+export const Newsletter = ({ name: nameProp }) => {
   // Inputs state
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -42,7 +43,7 @@ export const Newsletter = () => {
 
   return (
     <Section title={newsletter.title} small={true}>
-      <Container>
+      <Container name={nameProp}>
         <Form onSubmit={formTrigger}>
           <Input
             disabled={disabled}
@@ -75,4 +76,12 @@ export const Newsletter = () => {
       </Container>
     </Section>
   )
+}
+
+Newsletter.propTypes = {
+  name: PropTypes.string,
+}
+
+Newsletter.defaultProps = {
+  name: "",
 }

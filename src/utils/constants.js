@@ -22,3 +22,5 @@ export const ERROR_TYPE = {
   VALUES: "values",
   NETWORK: "network",
 }
+
+export const FIRST_NEWSLETTER_NAME = "NEWSLETTER_FIRST"

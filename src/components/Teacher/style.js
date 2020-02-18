@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { mobile } from "../../styles/medias"
+import { mobile, tabletDesktop } from "../../styles/medias"
 
 export const Container = styled.div`
   display: flex;
@@ -18,7 +18,9 @@ export const ProfilePhoto = styled.img`
 `
 
 export const ContentSide = styled.div`
-  margin-left: 40px;
+  ${tabletDesktop(css`
+    margin-left: 40px;
+  `)}
 `
 
 export const Name = styled.h3`

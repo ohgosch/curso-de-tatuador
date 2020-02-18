@@ -9,12 +9,13 @@ import { About } from "../components/About"
 import { Lesson } from "../components/Lesson"
 import { Location } from "../components/Location"
 import { Footer } from "../components/Footer"
+import { FIRST_NEWSLETTER_NAME } from "../utils/constants"
 
 const IndexPage = () => (
   <Layout>
     <SEO />
     <Main />
-    <Newsletter />
+    <Newsletter name={FIRST_NEWSLETTER_NAME} />
     <Teacher />
     <About />
     <Lesson />
