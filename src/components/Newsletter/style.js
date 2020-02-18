@@ -14,7 +14,7 @@ export const Form = styled.form`
   grid-gap: 25px;
 
   ${desktop(css`
-    grid-template-columns: 1fr 1fr 1fr 130px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) 130px;
   `)}
 
   ${tablet(css`

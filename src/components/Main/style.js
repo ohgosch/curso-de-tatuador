@@ -11,6 +11,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 30px 0;
 
   ${desktop(css`
     min-height: calc(100vh - 180px);
