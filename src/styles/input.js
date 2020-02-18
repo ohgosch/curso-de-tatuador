@@ -13,4 +13,8 @@ export const Input = styled.input`
   background-color: transparent;
   padding: 0 20px;
   height: 60px;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 `

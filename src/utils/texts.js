@@ -14,7 +14,11 @@ export const newsletter = {
   send: "Enviar",
   error: {
     values: "Preencha pelo menos um dos campos de contato ;)",
+    network:
+      "Ah, não! Alguma coisa deu errado enquanto estávamos pegando seu contato. Pode tentar enviar novamente?",
   },
+  success:
+    "Pronto! Já recebemos o teu contato. Logo mais entraremos em contato!",
 }
 
 export const teacher = {

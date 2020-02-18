@@ -17,3 +17,8 @@ export const COLORS = {
   brand: "#D9781F",
   dark: "#262626",
 }
+
+export const ERROR_TYPE = {
+  VALUES: "values",
+  NETWORK: "network",
+}
