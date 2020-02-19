@@ -7,6 +7,7 @@ import { Input } from "../../styles/input"
 import { newsletter } from "../../utils/texts"
 import { Alert } from "../../utils/alert"
 import { ERROR_TYPE } from "../../utils/constants"
+import { sendMail } from "../../utils/send-mail"
 
 export const Newsletter = ({ name: nameProp }) => {
   // Inputs state
@@ -24,13 +25,16 @@ export const Newsletter = ({ name: nameProp }) => {
 
   const canRequest = () => name && (whatsApp || email)
 
-  const formTrigger = event => {
+  const formTrigger = async event => {
     event.preventDefault()
 
     if (!canRequest()) {
       setErrorType(ERROR_TYPE.VALUES)
       return setError(true)
     }
+
+    const result = await sendMail(name, email, whatsApp);
+    console.log(result);
 
     clear()
   }
