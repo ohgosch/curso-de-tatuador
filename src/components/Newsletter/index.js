@@ -18,8 +18,8 @@ export const Newsletter = ({ name: nameProp }) => {
   // Form state
   const [error, setError] = useState(false)
   const [errorType, setErrorType] = useState()
-  const [success] = useState(false)
-  const [loading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const disabled = success || loading
 
@@ -33,10 +33,25 @@ export const Newsletter = ({ name: nameProp }) => {
       return setError(true)
     }
 
-    const result = await sendMail(name, email, whatsApp);
-    console.log(result);
+    try {
+      setLoading(true);
+      const { data: success } = await sendMail(name, email, whatsApp);
+      setLoading(false)
 
-    clear()
+      if (!success) {
+        setErrorType(ERROR_TYPE.NETWORK)
+        setLoading(false)
+        return setError(true)
+      }
+      setSuccess(true);
+      setError(false)
+      clear()
+
+    } catch {
+      setErrorType(ERROR_TYPE.NETWORK)
+      setLoading(false)
+      return setError(true)
+    }
   }
 
   const clear = () => {

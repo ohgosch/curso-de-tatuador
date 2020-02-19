@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/curso-de-tatuador-porto-alegre`,
   siteMetadata: {
     title: `Curso de Tatuador`,
     description: `Descrição temporária`,
