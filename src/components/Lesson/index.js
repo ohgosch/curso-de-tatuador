@@ -4,7 +4,7 @@ import { Section } from "../Section"
 import { lesson } from "../../utils/texts"
 import { Container } from "./style"
 
-import background from "../../images/Aulas background.png"
+import background from "../../images/Aulas background.webp"
 import { LessonIncluded } from "./LessonIncluded"
 
 export const Lesson = () => (

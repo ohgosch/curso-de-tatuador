@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import background from "../../images/Main background.png"
+import background from "../../images/Main background.webp"
 import { COLORS } from "../../utils/constants"
 import { Wrapper } from "../../styles/wrapper"
 import { desktop } from "../../styles/medias"

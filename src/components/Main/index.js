@@ -2,7 +2,7 @@ import React from "react"
 import { scroller } from "react-scroll"
 
 import { Container, Content, Description, Button, Title } from "./style"
-import Logo from "../../images/Logo.png"
+import Logo from "../../images/Logo.webp"
 import { main } from "../../utils/texts"
 import { FIRST_NEWSLETTER_NAME } from "../../utils/constants"
 

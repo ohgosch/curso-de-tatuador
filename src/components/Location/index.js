@@ -5,7 +5,7 @@ import { Container, Side, Name, Description } from "./style"
 import { location } from "../../utils/texts"
 import { Map } from "./Map"
 
-import background from "../../images/Local background.png"
+import background from "../../images/Local background.webp"
 
 export const Location = () => (
   <Section title={location.title} backgroundImage={background}>

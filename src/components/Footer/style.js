@@ -2,8 +2,8 @@ import styled, { css } from "styled-components"
 
 import { COLORS } from "../../utils/constants"
 import { Wrapper as WrapperBase } from "../../styles/wrapper"
-import facebook from "../../images/facebook.png"
-import instagram from "../../images/instagram.png"
+import facebook from "../../images/facebook.webp"
+import instagram from "../../images/instagram.webp"
 
 export const Container = styled.footer`
   background-color: ${COLORS.brand};

@@ -10,8 +10,8 @@ import {
   ContentSide,
 } from "./style"
 
-import background from "../../images/Professor background.png"
-import profile from "../../images/Professor perfil.png"
+import background from "../../images/Professor background.webp"
+import profile from "../../images/Professor perfil.webp"
 
 export const Teacher = () => (
   <Section title={teacher.title} backgroundImage={background}>

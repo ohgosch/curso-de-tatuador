@@ -4,7 +4,7 @@ import { Section } from "../Section"
 import { about } from "../../utils/texts"
 import { Container, Description, Side, Image } from "./style"
 
-import Photo from "../../images/Sobre o curso thumb.png"
+import Photo from "../../images/Sobre o curso thumb.webp"
 
 export const About = () => (
   <Section title={about.title}>
