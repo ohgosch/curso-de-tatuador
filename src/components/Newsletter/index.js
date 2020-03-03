@@ -34,8 +34,8 @@ export const Newsletter = ({ name: nameProp }) => {
     }
 
     try {
-      setLoading(true);
-      const { data: success } = await sendMail(name, email, whatsApp);
+      setLoading(true)
+      const { data: success } = await sendMail(name, email, whatsApp)
       setLoading(false)
 
       if (!success) {
@@ -43,10 +43,9 @@ export const Newsletter = ({ name: nameProp }) => {
         setLoading(false)
         return setError(true)
       }
-      setSuccess(true);
+      setSuccess(true)
       setError(false)
       clear()
-
     } catch {
       setErrorType(ERROR_TYPE.NETWORK)
       setLoading(false)

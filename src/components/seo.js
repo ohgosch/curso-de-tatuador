@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             keywords
+            googleVerification
           }
         }
       }
@@ -44,6 +45,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `keywords`,
           content: site.siteMetadata.keywords,
+        },
+        {
+          name: `google-site-verification`,
+          content: site.siteMetadata.googleVerification,
         },
         {
           property: `og:title`,

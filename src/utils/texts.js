@@ -1,5 +1,5 @@
 export const main = {
-  title: "Curso de Tatuador",
+  title: "Curso de Tatuagem em Porto Alegre",
   description:
     "Este curso prepara você, tanto sobre a parte teórica quanto a parte prática, para iniciar com conhecimento e segurança a sua carreira como tatuador.",
   logoAlt: "Logotipo do Curso de Tatuador",
