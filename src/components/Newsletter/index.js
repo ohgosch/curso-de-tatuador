@@ -77,33 +77,17 @@ export const Newsletter = ({ name: nameProp }) => {
   return (
     <Section title={newsletter.title} small={true}>
       <Container name={nameProp}>
-        <Form onSubmit={formTrigger} action="/thank-you">
-          <Input
-            disabled={disabled}
-            placeholder={newsletter.name}
-            type="text"
-            value={name}
-            onChange={({ target: { value } }) => setName(value)}
-            required
-          />
-          <Input
-            disabled={disabled}
-            placeholder={newsletter.email}
-            type="email"
-            value={email}
-            onChange={({ target: { value } }) => setEmail(value)}
-          />
-          <Input
-            disabled={disabled}
-            placeholder={newsletter.whatsapp}
-            type="tel"
-            value={whatsApp}
-            onChange={({ target: { value } }) => setWhatsApp(value)}
-          />
-          <Send disabled={disabled} as="button">
-            {newsletter.send}
-          </Send>
-        </Form>
+      <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
         {error && <Alert>{newsletter.error[errorType]}</Alert>}
         {success && <Alert>{newsletter.success}</Alert>}
       </Container>
