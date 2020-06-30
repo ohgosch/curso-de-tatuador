@@ -77,42 +77,27 @@ export const Newsletter = ({ name: nameProp }) => {
   return (
     <Section title={newsletter.title} small={true}>
       <Container name={nameProp}>
-        <Form name="contact" onSubmit={formTrigger} action="/thank-you" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="bot-field" />  <input type="hidden" name="form-name" value="contact" />
-          <Input
-            disabled={disabled}
-            placeholder={newsletter.name}
-            type="text"
-            value={name}
-            name="name"
-            id="name"
-            onChange={({ target: { value } }) => setName(value)}
-            required
-          />
-          <Input
-            disabled={disabled}
-            placeholder={newsletter.email}
-            type="email"
-            value={email}
-            name="email"
-            id="email"
-            onChange={({ target: { value } }) => setEmail(value)}
-          />
-          <Input
-            disabled={disabled}
-            placeholder={newsletter.whatsapp}
-            type="tel"
-            value={whatsApp}
-            name="whatsApp"
-            id="whatsApp"
-            onChange={({ target: { value } }) => setWhatsApp(value)}
-          />
-          <Send disabled={disabled} as="button">
-            {newsletter.send}
-          </Send>
-        </Form>
-        {error && <Alert>{newsletter.error[errorType]}</Alert>}
-        {success && <Alert>{newsletter.success}</Alert>}
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">  <input type="hidden" name="bot-field" />  <input type="hidden" name="form-name" value="contact" />  <div className="field half first">
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div className="field half">
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div className="field">
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" rows="6" />
+          </div>
+          <ul className="actions">
+            <li>
+              <input type="submit" value="Send Message" className="special" />
+            </li>
+            <li>
+              <input type="reset" value="Clear" />
+            </li>
+          </ul>
+        </form>
       </Container>
     </Section>
   )
