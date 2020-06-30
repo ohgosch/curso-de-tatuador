@@ -34,7 +34,6 @@ export const Newsletter = ({ name: nameProp }) => {
   }
 
   const formTrigger = async event => {
-    event.preventDefault()
 
     if (!canRequest()) {
       setErrorType(ERROR_TYPE.VALUES)
@@ -44,12 +43,15 @@ export const Newsletter = ({ name: nameProp }) => {
     try {
       setLoading(true)
       const data = { "form-name": "contact", name, email, whatsApp }
-      await fetch("https://relaxed-bardeen-0ea1c0.netlify.app/", {
+      fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
         body: encode(data)
       })
+        .then(() => console.log('deu certo'))
+        .catch(error => console.log('deu ruim :('));
       setLoading(false)
+      event.preventDefault()
 
       if (!success) {
         setErrorType(ERROR_TYPE.NETWORK)
