@@ -42,7 +42,7 @@ export const Newsletter = ({ name: nameProp }) => {
 
     try {
       setLoading(true)
-      const data = { "form-name": "newsletter", name, email, whatsApp }
+      const data = { "form-name": "contact", name, email, whatsApp }
       fetch("/", {
         method: "POST",
         // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
