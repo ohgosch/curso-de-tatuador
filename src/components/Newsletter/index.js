@@ -25,6 +25,14 @@ export const Newsletter = ({ name: nameProp }) => {
 
   const canRequest = () => name && (whatsApp || email)
 
+  const encode = (data) => {
+    const formData = new FormData();
+    Object.keys(data).forEach((k)=>{
+      formData.append(k,data[k])
+    });
+    return formData
+  }
+
   const formTrigger = async event => {
     event.preventDefault()
 
@@ -35,7 +43,12 @@ export const Newsletter = ({ name: nameProp }) => {
 
     try {
       setLoading(true)
-      const { data: success } = await sendMail(name, email, whatsApp)
+      const data = { "form-name": "contact", name, email, whatsApp }
+      await fetch("https://relaxed-bardeen-0ea1c0.netlify.app/", {
+        method: "POST",
+        // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
+        body: encode(data)
+      })
       setLoading(false)
 
       if (!success) {
