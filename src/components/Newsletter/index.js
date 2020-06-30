@@ -42,7 +42,7 @@ export const Newsletter = ({ name: nameProp }) => {
 
     try {
       setLoading(true)
-      const data = { "form-name": "contact", name, email, whatsApp }
+      const data = { "form-name": "newsletter", name, email, whatsApp }
       fetch("/", {
         method: "POST",
         // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
@@ -77,7 +77,7 @@ export const Newsletter = ({ name: nameProp }) => {
   return (
     <Section title={newsletter.title} small={true}>
       <Container name={nameProp}>
-        <Form onSubmit={formTrigger}>
+        <Form onSubmit={formTrigger} action="/thank-you">
           <Input
             disabled={disabled}
             placeholder={newsletter.name}
