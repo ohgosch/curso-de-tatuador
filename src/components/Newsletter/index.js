@@ -46,7 +46,7 @@ export const Newsletter = ({ name: nameProp }) => {
       const data = { "form-name": "contact", name, email, whatsApp }
       await fetch("https://relaxed-bardeen-0ea1c0.netlify.app/", {
         method: "POST",
-        // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
+        headers: { "Content-Type": 'multipart/form-data; boundary=random' },
         body: encode(data)
       })
       setLoading(false)
