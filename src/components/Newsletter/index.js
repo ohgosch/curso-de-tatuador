@@ -77,13 +77,15 @@ export const Newsletter = ({ name: nameProp }) => {
   return (
     <Section title={newsletter.title} small={true}>
       <Container name={nameProp}>
-        <Form onSubmit={formTrigger} action="/thank-you" data-netlify-honeypot="bot-field">
+        <Form name="contact" onSubmit={formTrigger} action="/thank-you" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />  <input type="hidden" name="form-name" value="contact" />
           <Input
             disabled={disabled}
             placeholder={newsletter.name}
             type="text"
             value={name}
+            name="name"
+            id="name"
             onChange={({ target: { value } }) => setName(value)}
             required
           />
@@ -92,6 +94,8 @@ export const Newsletter = ({ name: nameProp }) => {
             placeholder={newsletter.email}
             type="email"
             value={email}
+            name="email"
+            id="email"
             onChange={({ target: { value } }) => setEmail(value)}
           />
           <Input
@@ -99,6 +103,8 @@ export const Newsletter = ({ name: nameProp }) => {
             placeholder={newsletter.whatsapp}
             type="tel"
             value={whatsApp}
+            name="whatsApp"
+            id="whatsApp"
             onChange={({ target: { value } }) => setWhatsApp(value)}
           />
           <Send disabled={disabled} as="button">
